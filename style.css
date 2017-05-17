@@ -10,38 +10,38 @@ template: bb-theme
 
 /* Add your custom styles here... */
 
-.pac-single-product {
+.glhf-single-product {
 
 }
 
-.pac-single-product .product_title {
+.glhf-single-product .product_title {
     margin: 1em 0 0 0;
     line-height: 1;
 }
 
-.pac-single-product div.product div.images {
+.glhf-single-product div.product div.images {
     width: 100%;
 }
 
-.pac-single-product .woocommerce-product-details__short-description,
-.pac-single-product .product_meta,
-.pac-single-product .label {
+.glhf-single-product .woocommerce-product-details__short-description,
+.glhf-single-product .product_meta,
+.glhf-single-product .label {
     display: none;
 }
 
-.pac-single-product .radio-select li {
+.glhf-single-product .radio-select li {
     position: relative;
     /*float: left;*/
     display: inline-block;
 }
 
-.pac-single-product .radio-select input {
+.glhf-single-product .radio-select input {
     position: absolute;
     left: 0;
     z-index: -1;
 }
 
-.pac-single-product .radio-select input + label {
+.glhf-single-product .radio-select input + label {
     padding: 5px;
     background-color: #eaeaea;
     margin-left: 0;
@@ -49,28 +49,28 @@ template: bb-theme
     transition: 300ms ease background-color;
 }
 
-.pac-single-product .radio-select input + label:hover {
+.glhf-single-product .radio-select input + label:hover {
     cursor: pointer;
     background-color: #dedede;
 }
 
-.pac-single-product .single_variation_wrap {
+.glhf-single-product .single_variation_wrap {
     margin-top: 5px;
 }
-.pac-single-product .quantity {
+.glhf-single-product .quantity {
     display: inline-block;
 }
 
-.pac-single-product .quantity input {
+.glhf-single-product .quantity input {
     width: 65px;
     border-radius: 0;
 }
 
-.pac-single-product .variations {
+.glhf-single-product .variations {
     position: relative;
 }
 
-.pac-single-product .reset_variations {
+.glhf-single-product .reset_variations {
     position: absolute;
     top: 0;
     right: 0;
