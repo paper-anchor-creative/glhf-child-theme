@@ -1,0 +1,80 @@
+/*
+Theme Name: GLHF Child Theme
+Theme URI: http://www.glhf-apparel.com
+Version: 1.0
+Description: An example child theme that can be used as a starting point for custom development.
+Author: The Beaver Builder Team
+Author URI: http://www.fastlinemedia.com
+template: bb-theme
+*/
+/* Add your custom styles here... */
+
+.glhf-single-product {
+    .product_title {
+        margin: 1em 0 0;
+        line-height: 1;
+    }
+
+    div.product div.images {
+        width: 100%;
+    }
+
+    .label, .product_meta, .woocommerce-product-details__short-description {
+      display: none;
+      visibility: hidden;
+    }
+
+    .radio-select li {
+        position: relative;
+        /*float: left;*/
+        display: inline-block;
+    }
+
+    .radio-select input {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+    }
+
+    .radio-select input + label {
+        padding: 5px;
+        background-color: #eaeaea;
+        margin-left: 0;
+        margin-right: 2px;
+        transition: 300ms ease background-color;
+    }
+
+    .radio-select input + label:hover {
+        cursor: pointer;
+        background-color: #dedede;
+    }
+
+    .single_variation_wrap {
+        margin-top: 5px;
+    }
+
+    .quantity {
+        display: inline-block;
+    }
+
+    .quantity input {
+        width: 65px;
+        border-radius: 0;
+    }
+
+    .variations {
+        position: relative;
+    }
+
+    .reset_variations {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    button,
+    input[type=button],
+    input[type=submit] {
+        border-radius: 0;
+    }
+}
