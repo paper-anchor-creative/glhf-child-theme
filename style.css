@@ -50,16 +50,23 @@ template: bb-theme
 .glhf-single-product .single_variation_wrap {
   margin-top: 5px; }
 .glhf-single-product .quantity {
-  display: inline-block; }
+  display: inline-block;
+  float: left;
+  width: 22%;
+  margin-right: 3%; }
 .glhf-single-product .quantity input {
-  width: 65px;
+  width: 100%;
   border-radius: 0; }
 .glhf-single-product .variations {
   position: relative;
   width: 100%; }
+.glhf-single-product .reset_variations {
+  display: none !important;
+  visibility: hidden !important; }
 .glhf-single-product button,
 .glhf-single-product input[type=button],
 .glhf-single-product input[type=submit] {
+  width: 75%;
   border-radius: 0;
   display: inline-block; }
 

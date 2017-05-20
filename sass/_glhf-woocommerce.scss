@@ -73,10 +73,13 @@ template: bb-theme
 
     .quantity {
         display: inline-block;
+        float: left;
+        width: 22%;
+        margin-right: 3%;
     }
 
     .quantity input {
-        width: 65px;
+        width: 100%;
         border-radius: 0;
     }
 
@@ -85,9 +88,15 @@ template: bb-theme
         width: 100%;
     }
 
+    .reset_variations {
+      display: none !important;
+      visibility: hidden !important;
+    }
+
     button,
     input[type=button],
     input[type=submit] {
+        width: 75%;
         border-radius: 0;
         display: inline-block;
     }
