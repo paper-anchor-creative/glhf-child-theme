@@ -16,7 +16,7 @@ add_action( 'wp_enqueue_scripts', 'FLChildTheme::enqueue_scripts', 1000 );
  * @param array $atts
  * @return string
  */
-function pac_product_page( $atts ) {
+function glhf_product_page( $atts ) {
     if ( empty( $atts ) ) {
         return '';
     }
@@ -91,9 +91,9 @@ function pac_product_page( $atts ) {
         wp_enqueue_script( 'wc-single-product' );
         ?>
 
-        <div class="pac-single-product" data-product-page-preselected-id="<?php echo esc_attr( $preselected_id ); ?>">
+        <div class="glhf-single-product" data-product-page-preselected-id="<?php echo esc_attr( $preselected_id ); ?>">
 
-            <?php wc_get_template_part( 'content', 'pac-single-product' ); ?>
+            <?php wc_get_template_part( 'content', 'glhf-single-product' ); ?>
 
         </div>
 
@@ -103,13 +103,13 @@ function pac_product_page( $atts ) {
 
     return ob_get_clean();
 }
-add_shortcode('pac_single_product','pac_product_page');
+add_shortcode('glhf_single_product','glhf_product_page');
 
  /*
  *** Single Product Shortcode ***
  */
 
-function pac_product_item($atts) {
+function glhf_product_item($atts) {
     $atts = shortcode_atts(
         array(
             'id' => 'value'
@@ -156,4 +156,3 @@ function pac_product_item($atts) {
     return ob_get_clean();
 
 }
-// add_shortcode('drew_is_super_sexy','pac_product_item');
