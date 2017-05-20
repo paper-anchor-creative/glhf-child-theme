@@ -19,6 +19,8 @@ template: bb-theme
 .glhf-single-product .radio-select {
   margin-top: 5px; }
   .glhf-single-product .radio-select li {
+    width: 45px;
+    width: calc(100%/6);
     position: relative;
     display: inline-block; }
 .glhf-single-product .radio-select input {
@@ -27,7 +29,7 @@ template: bb-theme
   z-index: -1; }
 .glhf-single-product .radio-select input + label {
   display: inline-block;
-  width: 38px;
+  width: 100%;
   height: 28px;
   margin: 0;
   padding: 3px;
@@ -53,38 +55,43 @@ template: bb-theme
   width: 65px;
   border-radius: 0; }
 .glhf-single-product .variations {
-  position: relative; }
+  position: relative;
+  width: 100%; }
 .glhf-single-product button,
 .glhf-single-product input[type=button],
 .glhf-single-product input[type=submit] {
-  border-radius: 0; }
+  border-radius: 0;
+  display: inline-block; }
 
 .swatch-wrapper {
+  width: 45px;
+  width: calc(100%/6);
   margin: 0;
+  padding: 1px;
   display: inline-block;
   border: 0;
   position: relative; }
   .swatch-wrapper.selected {
     border: 0 !important;
-    padding: 2px; }
+    padding: 1px !important; }
   .swatch-wrapper.selected a:after {
     content: '\f00c';
     font-family: FontAwesome;
     text-indent: 0;
     display: block;
     position: absolute;
-    top: 4px;
-    left: 11px;
+    top: 3px;
+    left: 16px;
     color: #fff; }
 
 .swatch-anchor {
   outline: 0 !important;
   display: block;
-  width: 35px !important;
+  width: 100% !important;
   height: 25px !important; }
   .swatch-anchor[title=White], .swatch-anchor[title=white] {
     border: 1px solid #ccc; }
     .swatch-anchor[title=White]:after, .swatch-anchor[title=white]:after {
-      color: #000; }
+      color: #333 !important; }
 
 /*# sourceMappingURL=style.css.map */
