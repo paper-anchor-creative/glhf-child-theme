@@ -141,3 +141,13 @@ template: bb-theme
     }
   }
 }
+
+.firstline {
+    display: block;
+    font-size: 50%;
+    letter-spacing: 7px;
+}
+
+.shadow {
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+}
