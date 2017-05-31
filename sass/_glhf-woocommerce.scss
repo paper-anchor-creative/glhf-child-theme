@@ -173,3 +173,31 @@ template: bb-theme
 .home .fl-page-header {
     background-color: rgba(10, 96, 183, 0);
 }
+
+.fl-page-nav .navbar-nav li > a {
+    // text-transform: uppercase;
+    // font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.fl-page-nav .navbar-nav li li > a {
+    text-transform: initial;
+}
+
+@media screen and (min-width: 768px) {
+    .fl-page-nav .navbar-nav li > a {
+        padding: 15px 40px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .home .fl-page-header {
+        background-color: rgba(10, 96, 183, 1) !important;
+        z-index: 999 !important;
+        position: relative;
+    }
+
+    .fl-page-nav-wrap {
+        border: none !important;
+    }
+}
