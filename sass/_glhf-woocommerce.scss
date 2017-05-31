@@ -155,14 +155,23 @@ template: bb-theme
   }
 }
 
-.firstline {
-    display: block;
-    font-size: 50%;
-    letter-spacing: 7px;
+// Styles for Hero Text Feature
+.fl-node-591f960981be9.fl-module-heading .fl-heading {
+    font-size: 15vw;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    .firstline {
+        display: block;
+        font-size: 50%;
+        letter-spacing: 7px;
+    }
+
 }
 
-.shadow {
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+@media screen and (min-width: 768px) {
+    .fl-node-591f960981be9.fl-module-heading .fl-heading {
+        font-size: 10vw;
+    }
 }
 
 .fl-page-header {
