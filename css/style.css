@@ -8,6 +8,10 @@ Author URI: http://www.fastlinemedia.com
 template: bb-theme
 */
 /* Add your custom styles here... */
+.glhf-single-product .woocommerce-product-gallery .woocommerce-product-gallery__image {
+  display: none; }
+  .glhf-single-product .woocommerce-product-gallery .woocommerce-product-gallery__image:first-child {
+    display: block; }
 .glhf-single-product .product_title {
   margin: 1em 0 0;
   line-height: 1; }

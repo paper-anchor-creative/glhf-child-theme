@@ -9,7 +9,19 @@ template: bb-theme
 */
 /* Add your custom styles here... */
 
+
+
 .glhf-single-product {
+
+    // Remove Product Gallery Inside Single Product Widget
+    .woocommerce-product-gallery .woocommerce-product-gallery__image {
+        display: none;
+
+        &:first-child {
+            display: block;;
+        }
+    }
+
     .product_title {
         margin: 1em 0 0;
         line-height: 1;
@@ -23,6 +35,7 @@ template: bb-theme
       display: none !important;
       visibility: hidden;
     }
+
     .radio-select {
       margin-top: 5px;
       li {
