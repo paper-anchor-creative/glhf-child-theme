@@ -151,3 +151,7 @@ template: bb-theme
 .shadow {
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
 }
+
+.fl-page-header {
+    transition: 300ms ease background-color;
+}
