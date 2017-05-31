@@ -167,4 +167,9 @@ template: bb-theme
 
 .fl-page-header {
     transition: 300ms ease background-color;
+    // background-color: rgb(10, 96, 183);
+}
+
+.home .fl-page-header {
+    background-color: rgba(10, 96, 183, 0);
 }

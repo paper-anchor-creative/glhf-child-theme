@@ -6,7 +6,7 @@ jQuery(document).scroll(function() {
 
     } else {
 
-        jQuery('.fl-page-header').css('background-color', 'rgba(10,96,183,0)');
+        // jQuery('.fl-page-header').css('background-color', 'rgba(10,96,183,0)');
 
     }
 
