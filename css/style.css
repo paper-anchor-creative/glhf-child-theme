@@ -8,6 +8,10 @@ Author URI: http://www.fastlinemedia.com
 template: bb-theme
 */
 /* Add your custom styles here... */
+.glhf-single-product .woocommerce-product-gallery .woocommerce-product-gallery__image {
+  display: none; }
+  .glhf-single-product .woocommerce-product-gallery .woocommerce-product-gallery__image:first-child {
+    display: block; }
 .glhf-single-product .product_title {
   margin: 1em 0 0;
   line-height: 1; }
@@ -103,12 +107,39 @@ template: bb-theme
     .swatch-anchor[title=White]:after, .swatch-anchor[title=white]:after {
       color: #333 !important; }
 
-.firstline {
-  display: block;
-  font-size: 50%;
-  letter-spacing: 7px; }
-
-.shadow {
+.fl-node-591f960981be9.fl-module-heading .fl-heading {
+  font-size: 15vw;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
+  .fl-node-591f960981be9.fl-module-heading .fl-heading .firstline {
+    display: block;
+    font-size: 50%;
+    letter-spacing: 7px; }
+
+@media screen and (min-width: 768px) {
+  .fl-node-591f960981be9.fl-module-heading .fl-heading {
+    font-size: 10vw; } }
+.fl-page-header {
+  transition: 300ms ease background-color; }
+
+.home .fl-page-header {
+  background-color: rgba(10, 96, 183, 0); }
+
+.fl-page-nav .navbar-nav li > a {
+  letter-spacing: 2px; }
+
+.fl-page-nav .navbar-nav li li > a {
+  text-transform: initial; }
+
+@media screen and (min-width: 768px) {
+  .fl-page-nav .navbar-nav li > a {
+    padding: 15px 40px; } }
+@media screen and (max-width: 991px) {
+  .home .fl-page-header {
+    background-color: #0a60b7 !important;
+    z-index: 999 !important;
+    position: relative; }
+
+  .fl-page-nav-wrap {
+    border: none !important; } }
 
 /*# sourceMappingURL=style.css.map */
