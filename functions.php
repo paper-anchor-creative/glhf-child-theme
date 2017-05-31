@@ -17,7 +17,7 @@ function glhf_enqueues() {
 	wp_enqueue_style('glhf-style', get_template_directory_uri() .'/css/style.css', array(), '1.0.0', false);
 
 	// enqueue script
-	wp_enqueue_script('glhf-script', get_template_directory_uri() .'/js/functions.js', array('jquery'), '20150825', true);
+	wp_enqueue_script('glhf-script', get_template_directory_uri() .'/js/scripts.js', array('jquery'), '1.0.0', true);
 
 }
 add_action('wp_enqueue_scripts', 'glhf_enqueues');
