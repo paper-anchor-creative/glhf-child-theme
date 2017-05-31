@@ -14,10 +14,10 @@ add_action( 'wp_enqueue_scripts', 'FLChildTheme::enqueue_scripts', 1000 );
 function glhf_enqueues() {
 
 	// enqueue style
-	wp_enqueue_style('glhf-style', get_template_directory_uri() .'/css/style.css', array(), '1.0.0', false);
+	wp_enqueue_style('glhf-style', get_stylesheet_directory_uri() .'/css/style.css', array(), '1.0.0', false);
 
 	// enqueue script
-	wp_enqueue_script('glhf-script', get_template_directory_uri() .'/js/scripts.js', array('jquery'), '1.0.0', true);
+	wp_enqueue_script('glhf-script', get_stylesheet_directory_uri() .'/js/scripts.js', array('jquery'), '1.0.0', true);
 
 }
 add_action('wp_enqueue_scripts', 'glhf_enqueues');
