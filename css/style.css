@@ -63,7 +63,8 @@
 .glhf-single-product input[type=submit] {
   width: 75%;
   display: inline-block;
-  background-color: #0a60b7; }
+  background-color: #0a60b7;
+  border-radius: 0; }
   .glhf-single-product button:focus,
   .glhf-single-product input[type=button]:focus,
   .glhf-single-product input[type=submit]:focus {
