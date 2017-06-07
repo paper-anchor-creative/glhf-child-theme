@@ -94,6 +94,8 @@
     color: #333; }
 
 button, input[type=button], input[type=submit] {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 0; }
 
 .swatch-wrapper {
