@@ -72,8 +72,21 @@ template: bb-theme
 .glhf-single-product input[type=button],
 .glhf-single-product input[type=submit] {
   width: 75%;
-  border-radius: 0;
   display: inline-block; }
+.glhf-single-product .added_to_cart .wc-forward {
+  width: 100%;
+  padding: .5em 1em;
+  border: 1px solid #0a60b7;
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: capitalize; }
+  .glhf-single-product .added_to_cart .wc-forward:hover {
+    background-color: #0a60b7;
+    color: #fff; }
+
+button, input[type=button], input[type=submit] {
+  border-radius: 0; }
 
 .swatch-wrapper {
   width: 45px;

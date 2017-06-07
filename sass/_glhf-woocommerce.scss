@@ -111,9 +111,46 @@ template: bb-theme
     input[type=button],
     input[type=submit] {
         width: 75%;
-        border-radius: 0;
         display: inline-block;
+        background-color: #0a60b7;
+        &:focus {
+          background-color: #0a60b7;
+        }
     }
+
+    .woocommerce-variation-add-to-cart {
+      position: relative;
+    }
+
+    .added_to_cart {
+      width: 100%;
+      padding: .5em 1em;
+      border: 1px solid #0a60b7;
+      display: inline-block;
+      margin-top: 40px;
+      text-align: center;
+      text-transform: capitalize;
+      &:hover {
+        background-color: #0a60b7;
+        border: 1px solid #07427d;
+        color: #fff;
+        text-decoration: none;
+      }
+      &:before {
+        content: 'Successfully added to cart.';
+        pointer-events: none;
+        position: absolute;
+        top: 44px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        color: #333;
+      }
+    }
+}
+
+button, input[type=button], input[type=submit] {
+  border-radius: 0;
 }
 
 //Colors Swatches
