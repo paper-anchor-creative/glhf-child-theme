@@ -51,6 +51,13 @@ button, input[type=button], input[type=submit] {
   -webkit-border-radius: 4px;
   border-radius: 0; }
 
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+  float: none;
+  width: 100%;
+  text-align: left; }
+  .woocommerce .cart-collaterals .cart_totals .shipping td, .woocommerce-page .cart-collaterals .cart_totals .shipping td {
+    padding-right: 1em; }
+
 .swatch-wrapper {
   width: 45px;
   width: calc(100%/6);
