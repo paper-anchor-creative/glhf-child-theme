@@ -196,7 +196,7 @@ input[type=submit] {
 .cart-info {
   position: fixed;
   top: 1.75em;
-  left: .75em;
+  right: .75em;
   z-index: 999999; }
   .cart-info .cart-contents {
     color: white;
@@ -204,6 +204,6 @@ input[type=submit] {
     transition: 300ms ease background-color; }
     .cart-info .cart-contents:hover, .cart-info .cart-contents:focus {
       text-decoration: none;
-      background-color: #3e3e3e; }
+      background-color: #0d4782; }
 
 /*# sourceMappingURL=style.css.map */
