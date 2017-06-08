@@ -5,7 +5,7 @@
 .cart-info {
     position: fixed;
     top: 1.75em;
-    left: .75em;
+    right: .75em;
     z-index: 999999;
 
     .cart-contents {
@@ -15,7 +15,7 @@
 
         &:hover, &:focus {
             text-decoration: none;
-            background-color: #3e3e3e;
+            background-color: #0d4782;
         }
     }
 }
