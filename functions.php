@@ -10,18 +10,6 @@ require_once 'classes/class-fl-child-theme.php';
 // Actions
 add_action( 'wp_enqueue_scripts', 'FLChildTheme::enqueue_scripts', 1000 );
 
-// Add New Stylesheet
-function glhf_enqueues() {
-
-	// enqueue style
-	wp_enqueue_style('glhf-style', get_stylesheet_directory_uri() .'/css/style.css', array(), '1.0.0', false);
-
-	// enqueue script
-	wp_enqueue_script('glhf-script', get_stylesheet_directory_uri() .'/js/scripts.js', array('jquery'), '1.0.0', true);
-
-}
-add_action('wp_enqueue_scripts', 'glhf_enqueues');
-
 /**
  * Show a single product page.
  *
