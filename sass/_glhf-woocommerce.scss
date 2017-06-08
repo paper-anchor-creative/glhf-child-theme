@@ -23,7 +23,11 @@
       visibility: hidden;
     }
 
-
+    button,
+    input[type=button],
+    input[type=submit] {
+        width: 75%;
+    }
 
     .single_variation_wrap {
         margin-top: 5px;
@@ -34,24 +38,6 @@
         float: left;
         width: 22%;
         margin-right: 3%;
-    }
-
-    .quantity input {
-        width: 100%;
-        border-radius: 0;
-        padding: 5px !important;
-    }
-
-    button,
-    input[type=button],
-    input[type=submit] {
-        width: 75%;
-        display: inline-block;
-        background-color: #0a60b7;
-        border-radius: 0;
-        &:focus {
-          background-color: #0a60b7;
-        }
     }
 
     .woocommerce-variation-add-to-cart {
@@ -132,6 +118,28 @@ button, input[type=button], input[type=submit] {
 
 .glhf-single-product .swatch-anchor {
     height: 25px !important;
+}
+// global style resets
+button,
+input[type=button],
+input[type=submit] {
+    width: 89%;
+    display: inline-block;
+    background-color: #0a60b7;
+    border-radius: 0 !important;
+    &:focus {
+      background-color: #0a60b7;
+    }
+}
+
+.quantity input, input[type="number"] {
+    width: 100%;
+    border-radius: 0;
+    padding: 5px !important;
+}
+
+.woocommerce div.product form.cart .variations {
+    margin-bottom: .5em;
 }
 
 // Shirt Size Selectors

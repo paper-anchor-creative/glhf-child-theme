@@ -10,6 +10,10 @@
 .glhf-single-product .label, .glhf-single-product .product_meta, .glhf-single-product .woocommerce-product-details__short-description, .glhf-single-product .woocommerce-Tabs-panel--additional_information, .glhf-single-product .wc-tabs-wrapper {
   display: none !important;
   visibility: hidden; }
+.glhf-single-product button,
+.glhf-single-product input[type=button],
+.glhf-single-product input[type=submit] {
+  width: 75%; }
 .glhf-single-product .single_variation_wrap {
   margin-top: 5px; }
 .glhf-single-product .quantity {
@@ -17,21 +21,6 @@
   float: left;
   width: 22%;
   margin-right: 3%; }
-.glhf-single-product .quantity input {
-  width: 100%;
-  border-radius: 0;
-  padding: 5px !important; }
-.glhf-single-product button,
-.glhf-single-product input[type=button],
-.glhf-single-product input[type=submit] {
-  width: 75%;
-  display: inline-block;
-  background-color: #0a60b7;
-  border-radius: 0; }
-  .glhf-single-product button:focus,
-  .glhf-single-product input[type=button]:focus,
-  .glhf-single-product input[type=submit]:focus {
-    background-color: #0a60b7; }
 .glhf-single-product .woocommerce-variation-add-to-cart {
   position: relative; }
 .glhf-single-product .added_to_cart {
@@ -95,6 +84,26 @@ button, input[type=button], input[type=submit] {
 
 .glhf-single-product .swatch-anchor {
   height: 25px !important; }
+
+button,
+input[type=button],
+input[type=submit] {
+  width: 89%;
+  display: inline-block;
+  background-color: #0a60b7;
+  border-radius: 0 !important; }
+  button:focus,
+  input[type=button]:focus,
+  input[type=submit]:focus {
+    background-color: #0a60b7; }
+
+.quantity input, input[type="number"] {
+  width: 100%;
+  border-radius: 0;
+  padding: 5px !important; }
+
+.woocommerce div.product form.cart .variations {
+  margin-bottom: .5em; }
 
 .variations {
   position: relative;
