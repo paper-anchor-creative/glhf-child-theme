@@ -77,6 +77,16 @@ button, input[type=button], input[type=submit] {
   border-radius: 0;
 }
 
+//Full Width Cart Totals
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+	float: none;
+	width: 100%;
+	text-align: left;
+  .shipping td {
+    padding-right: 1em;
+  }
+}
+
 //Colors Swatches
 .swatch-wrapper {
   width: 45px;
