@@ -5,7 +5,7 @@
         display: none;
 
         &:first-child {
-            display: block;;
+            display: block;
         }
     }
 
@@ -23,48 +23,10 @@
       visibility: hidden;
     }
 
-    .radio-select {
-      margin-top: 5px;
-      li {
-        width: 45px;
-        width: calc(100%/6);
-        position: relative;
-        display: inline-block;
-      }
-    }
-
-    .radio-select input {
-        position: absolute;
-        left: 0;
-        z-index: -1;
-    }
-
-    .radio-select input + label {
-      display: inline-block;
-      width: 100%;
-      height: 28px;
-      margin: 0;
-      padding: 3px;
-      border-left: 1px solid #333;
-      border-top: 1px solid #333;
-      border-bottom: 1px solid #333;
-      background-color: #fff;
-      text-align: center;
-      transition: 300ms ease background-color;
-    }
-
-    .radio-select li:last-child input + label {
-      border: 1px solid #333;
-    }
-
-    .radio-select input + label:hover {
-        cursor: pointer;
-        background-color: #d3d3d3;
-    }
-
-    .radio-select input:checked + label {
-      background-color: #333;
-      color: #fff;
+    button,
+    input[type=button],
+    input[type=submit] {
+        width: 75%;
     }
 
     .single_variation_wrap {
@@ -76,34 +38,6 @@
         float: left;
         width: 22%;
         margin-right: 3%;
-    }
-
-    .quantity input {
-        width: 100%;
-        border-radius: 0;
-        padding: 5px !important;
-    }
-
-    .variations {
-        position: relative;
-        width: 100%;
-    }
-
-    .reset_variations {
-      display: none !important;
-      visibility: hidden !important;
-    }
-
-    button,
-    input[type=button],
-    input[type=submit] {
-        width: 75%;
-        display: inline-block;
-        background-color: #0a60b7;
-        border-radius: 0;
-        &:focus {
-          background-color: #0a60b7;
-        }
     }
 
     .woocommerce-variation-add-to-cart {
@@ -144,7 +78,6 @@ button, input[type=button], input[type=submit] {
 }
 
 //Colors Swatches
-
 .swatch-wrapper {
   width: 45px;
   width: calc(100%/6);
@@ -163,23 +96,104 @@ button, input[type=button], input[type=submit] {
     text-indent: 0;
     display: block;
     position: absolute;
-    top: 3px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-7px);
+    transform: translate(-50%, -50%);
     color: #fff;
   }
 }
+
 .swatch-anchor {
   outline: 0 !important;
   display: block;
   width: 100% !important;
-  height: 25px !important;
+
   &[title=White], &[title=white] {
     border: 1px solid #ccc;
     &:after {
       color: #333 !important;
     }
   }
+}
+
+.glhf-single-product .swatch-anchor {
+    height: 25px !important;
+}
+// global style resets
+button,
+input[type=button],
+input[type=submit] {
+    width: 89%;
+    display: inline-block;
+    background-color: #0a60b7;
+    border-radius: 0 !important;
+    &:focus {
+      background-color: #0a60b7;
+    }
+}
+
+.quantity input, input[type="number"] {
+    width: 100%;
+    border-radius: 0;
+    padding: 5px !important;
+}
+
+.woocommerce div.product form.cart .variations {
+    margin-bottom: .5em;
+}
+
+// Shirt Size Selectors
+.variations {
+    position: relative;
+    width: 100%;
+}
+
+.reset_variations {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.swatch-control.radio-select {
+  margin-top: 5px;
+  li {
+    width: 45px;
+    width: calc(100%/6);
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.swatch-control.radio-select input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.swatch-control.radio-select input + label {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 3px;
+  border-left: 1px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  background-color: #fff;
+  text-align: center;
+  transition: 300ms ease background-color;
+}
+
+.swatch-control.radio-select li:last-child input + label {
+  border: 1px solid #333;
+}
+
+.swatch-control.radio-select input + label:hover {
+    cursor: pointer;
+    background-color: #d3d3d3;
+}
+
+.swatch-control.radio-select input:checked + label {
+  background-color: #333;
+  color: #fff;
 }
 
 // Styles for Hero Text Feature
