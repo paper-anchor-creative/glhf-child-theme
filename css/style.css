@@ -165,5 +165,20 @@ button, input[type=button], input[type=submit] {
 
   .fl-page-nav-wrap {
     border: none !important; } }
+.admin-bar .cart-info {
+  top: calc(32px + 1.75em); }
+
+.cart-info {
+  position: fixed;
+  top: 1.75em;
+  left: .75em;
+  z-index: 999999; }
+  .cart-info .cart-contents {
+    color: white;
+    padding: 1em;
+    transition: 300ms ease background-color; }
+    .cart-info .cart-contents:hover, .cart-info .cart-contents:focus {
+      text-decoration: none;
+      background-color: #3e3e3e; }
 
 /*# sourceMappingURL=style.css.map */

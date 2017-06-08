@@ -1,0 +1,21 @@
+.admin-bar .cart-info {
+    top: calc(32px + 1.75em);
+}
+
+.cart-info {
+    position: fixed;
+    top: 1.75em;
+    left: .75em;
+    z-index: 999999;
+
+    .cart-contents {
+        color: white;
+        padding: 1em;
+        transition: 300ms ease background-color;
+
+        &:hover, &:focus {
+            text-decoration: none;
+            background-color: #3e3e3e;
+        }
+    }
+}

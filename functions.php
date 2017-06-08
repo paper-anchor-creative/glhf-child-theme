@@ -106,7 +106,7 @@ function glhf_product_page( $atts ) {
 add_shortcode('glhf_single_product','glhf_product_page');
 
  /*
- *** Single Product Shortcode ***
+ ** Single Product Shortcode **
  */
 
 function glhf_product_item($atts) {
@@ -156,3 +156,15 @@ function glhf_product_item($atts) {
     return ob_get_clean();
 
 }
+
+/**
+ * Display Items in Cart
+ */
+function display_cart_info() {
+    ?>
+    <div class="cart-info">
+        <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><i class="fa fa-shopping-cart"></i> <span><?php echo WC()->cart->cart_contents_count; ?></span></a>
+    </div>
+    <?php
+}
+add_action('fl_before_header', 'display_cart_info');
