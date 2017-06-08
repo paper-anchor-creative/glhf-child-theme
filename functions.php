@@ -158,13 +158,11 @@ function glhf_product_item($atts) {
 }
 
 /**
- * Display Items in Cart
+ * Disable billing phone requirement
  */
-function display_cart_info() {
-    ?>
-    <div class="cart-info">
-        <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><i class="fa fa-shopping-cart"></i> <span><?php echo WC()->cart->cart_contents_count; ?></span></a>
-    </div>
-    <?php
-}
-add_action('fl_before_header', 'display_cart_info');
+ add_filter( 'woocommerce_billing_fields', 'wc_npr_filter_phone', 10, 1 );
+
+ function wc_npr_filter_phone( $address_fields ) {
+ $address_fields['billing_phone']['required'] = false;
+ return $address_fields;
+ }
