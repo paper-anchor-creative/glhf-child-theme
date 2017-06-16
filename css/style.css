@@ -79,6 +79,8 @@ button, input[type=button], input[type=submit] {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff; }
+  #picker_hat-color .swatch-wrapper {
+    width: 50%; }
 
 .swatch-anchor {
   outline: 0 !important;
