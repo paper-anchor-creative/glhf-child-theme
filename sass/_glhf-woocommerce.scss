@@ -111,14 +111,17 @@ button, input[type=button], input[type=submit] {
     transform: translate(-50%, -50%);
     color: #fff;
   }
-  #picker_hat-color & {
-    width: 50%;
-  }
-  #picker_embroidery-color & {
-    width: 25%;
-  }
 }
 
+// Sets width of hat color to 50%
+#picker_hat-color .swatch-wrapper {
+  width: 50%;
+}
+
+// Sets width of hat embroidery color to 25%
+#picker_embroidery-color .swatch-wrapper {
+  width: 25%;
+}
 
 .swatch-anchor {
   outline: 0 !important;
