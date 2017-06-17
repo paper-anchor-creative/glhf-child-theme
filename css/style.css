@@ -81,7 +81,7 @@ button, input[type=button], input[type=submit] {
     color: #fff; }
   #picker_hat-color .swatch-wrapper {
     width: 50%; }
-  .swatch-wrapper #picker_embroidery-color {
+  #picker_embroidery-color .swatch-wrapper {
     width: 25%; }
 
 .swatch-anchor {
