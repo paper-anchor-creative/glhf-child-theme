@@ -170,6 +170,9 @@ input[type=submit] {
     font-size: 50%;
     letter-spacing: 7px; }
 
+.about_paypal {
+  margin-left: 1em; }
+
 @media screen and (min-width: 768px) {
   .fl-node-591f960981be9.fl-module-heading .fl-heading {
     font-size: 10vw; } }
